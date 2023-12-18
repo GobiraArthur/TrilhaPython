@@ -1,34 +1,44 @@
-# <font color="gree"> SOULPY - TRILHA GROUP PYTHON </font><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  
-  <h3 align="center">🚧Projeto em Construção...🚧</h3>
+**CRIANDO UM AMBIENTE VIRTUAL PYTHON NO VS CODE**
 
- <h5 align="justify">Bem-vindos à Soulpy, onde a arte do desenvolvimento em Python se encontra com a inovação digital, Como entusiastas da programação, decidimos transformar nossa paixão em uma missão. Nossa jornada é dedicada a desvendar os segredos da modularidade em Python e oferecer soluções com objetivo de alcançar novos patamares de eficiência e elegância no código.</h5>
+------------
 
-**Funcionalidades do projeto**
 
-- [x] Prepar um pacote datafruta disponibilizando as classes implementadas e o aplicativo
 
- **indice**
+**Passo 1**: Crie um novo projeto no VS Code.<br>
+Abra o VS Code e crie uma nova pasta para o seu projeto.
 
- - <a href="./DataFruta/Funçao.md">Datafruta</a>
-  - <a href="./Relatorios/">Relatorios</a>
+**Passo 2**: Abra o Terminal
+No VS Code, vá para Terminal -> New Terminal.
 
- **Tecnologias ultilizadas**
+**Passo 3**: Crie um ambiente virtual
+Digite o seguinte comando no terminal para criar um ambiente virtual usando o módulo venv do Python. 
 
- 1. Vscod
- 2. jupyter notebooks
+```python
+python -m venv myenv
+```
+Isso criará uma pasta chamada myenv no diretório atual com todos os arquivos necessários para o ambiente virtual.
 
-  **Autores**
+**Passo 4**: Ative o ambiente virtual
+No terminal, digite o seguinte comando para ativar o ambiente virtual:
 
-  | [<img src="https://avatars.githubusercontent.com/u/147214226?v=4" width=115><br><sub>Thiago Leite</sub>](https://github.com/Leitetc) |  [<img src="https://avatars.githubusercontent.com/u/133709733?v=4" width=115><br><sub>Eduardo Rocha </sub>](https://github.com/eduardsroch) |  [<img src="https://avatars.githubusercontent.com/u/144444085?v=4" width=115><br><sub>Nairan Santos</sub>](https://github.com/nairansantos) | [<img src="https://avatars.githubusercontent.com/u/146987217?v=4" width=115><br><sub>Arthur Gobira</sub>](https://github.com/GobiraArthur) | [<img src="https://avatars.githubusercontent.com/u/148831994?v=4" width=115><br><sub>Ricardo dos Santos </sub>](https://github.com/RicardTIc) |
-| :---: | :---: | :---: | :---: |:---: |
+```python
+myenv\Scripts\activate
+```
+Você verá (myenv) no início da linha de comando, indicando que o ambiente foi ativado com sucesso.
 
-**Contatos**
-| Nome            | E-mail                  |
-|-----------------|-------------------------|
-| Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |
-| Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| 
-| Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) |
-| Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| 
-| Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) |
+Instale pacotes necessários
+Com o ambiente virtual ativado, você pode usar o pip para instalar pacotes. Por exemplo, para instalar o pacote numpy, digite:
+
+```python
+pip install numpypip 
+```
+Isso instalará o numpy apenas no ambiente virtual atual.
+
+**Passo 5**: Desativar o ambiente virtual (opcional)
+Quando terminar de trabalhar no seu projeto, você pode desativar o ambiente virtual digitando:
+
+```python
+deactivate
+
+```
+Isso restaurará o prompt do terminal para o ambiente global do seu sistema.
